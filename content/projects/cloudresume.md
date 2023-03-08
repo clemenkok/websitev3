@@ -4,8 +4,9 @@ dateMonthYear: Dec 2022
 description:  Built a resume website using several AWS services - S3, Route53, CloudFront, SAM, DynamoDB, Lambda, API Gateway.
 type: page
 topic: project
-image: "/images/aws.png"
 ---
+
+{{< figure src="/images/aws.png" title="" >}}
 
 {{< figure src="/images/cloudresume.png" title="" >}}
 
