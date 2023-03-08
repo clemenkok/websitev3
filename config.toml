@@ -1,4 +1,4 @@
-baseURL = 'https://clemenkok.com'
+baseURL = 'https://clemenkok.netlify.app'
 languageCode = 'en-us'
 title = 'Clemen Kok'
 theme = 'charlolamode' 
