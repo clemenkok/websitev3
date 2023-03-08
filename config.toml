@@ -1,0 +1,4 @@
+baseURL = 'http://clemenkok.com/'
+languageCode = 'en-us'
+title = 'Clemen Kok'
+theme = 'charlolamode' 
