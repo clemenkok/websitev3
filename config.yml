@@ -92,3 +92,5 @@ pygmentsUseClasses: true
 minify:
     disableXML: true
 
+theme: charlolamode
+
