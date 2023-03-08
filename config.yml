@@ -1,0 +1,94 @@
+baseURL: https://clemenkok.netlify.app
+title: clemenkok
+paginate: 5
+theme: charlolamode
+
+
+
+menu:
+    main:
+        - name: Contact
+          url: /contact/
+          weight: 30
+        - name: Articles
+          url: /articles/
+          weight: 20
+        - name: Projects
+          url: /projects/
+          weight: 15
+
+     # - name: Categories
+        #   url: /categories/
+        #   weight: 10
+        # - name: new Tab
+        #   url: /newtab/
+        #   weight: defines order of tabs
+   
+
+
+params:
+    author: Clemen Kok
+
+
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowShareButtons: true
+    ShowReadingTime: true
+    displayFullLangName: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowToc: true
+
+    profileMode:
+        # Disable to populate home page with 'mainSections' content
+        enabled: true
+        title: Clemen Kok
+        description: |
+
+          Electronic & Information Engineering at Imperial College.
+        
+
+          Systems, Security, Machine Learning.
+        imageUrl: "/images/profile.png"
+        imageTitle: my image
+        imageWidth: 0
+        imageHeight: 0
+        buttons:
+            - name: Random Blog Article
+              url: "/articles/article"
+    mainSections:
+      - articles
+
+    socialIcons:
+        - name: github
+          url: "https://github.com/clemenkok"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/clemenkok/"
+
+      # add more social icons. find more in svg.html file
+      # - name: youtube
+      #   url: yoururl
+      # - name: twitter
+      #   url: yoururl
+      # - name: facebook
+      #   url: yoururl
+
+
+    # change favicon in images folder (icon for web tab)
+    assets:
+          favicon: "/images/favicon.ico"
+          favicon16x16: "/images/favicon-16x16.png"
+          favicon32x32: "/images/favicon-32x32.png"
+          apple_touch_icon: "/images/apple-touch-icon.png"
+          safari_pinned_tab: "/images/apple-touch-icon.png"
+
+
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+enableEmoji: true
+pygmentsUseClasses: true
+
+minify:
+    disableXML: true
+
