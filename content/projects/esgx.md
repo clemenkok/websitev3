@@ -9,3 +9,5 @@ topic: project
 {{< figure src="/images/awsreact.png" title="" >}}
 
 Link to [Github](https://github.com/tangboxuan/ichack23). Won Best Hack under BlackRock sustainable investing category.
+
+{{< figure src="/images/esgx.drawio (2).png" title="" >}}

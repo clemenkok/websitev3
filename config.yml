@@ -54,7 +54,7 @@ params:
         imageHeight: 0
         buttons:
             - name: Random Blog Article
-              url: "/articles/article"
+              url: "/articles/gdsc"
     mainSections:
       - articles
 
