@@ -13,7 +13,7 @@ type: list
 - Freshman Design Project
 
 #### Year 2 (Imperial College London Dept of EEE)
-- Software Systems
+- Software Systems ([notes](https://github.com/clemenkok/collegenotes/blob/main/Software_Systems.pdf))
 - Signals and Systems
 - Instruction Architectures and Compilers
 - Mathematics
