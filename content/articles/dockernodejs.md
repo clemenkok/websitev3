@@ -5,7 +5,7 @@ description: Using docker-compose in NodeJS
 topic: career
 ---
 
-[Original GitHub Link](https://github.com/clemenkok/DockerComposeforNodeJS)
+[Original GitHub Link](https://github.com/clemenkok/DockerComposeforNodeJSPublic)
 
 # Toggling containers with docker-compose in NodeJS
 
