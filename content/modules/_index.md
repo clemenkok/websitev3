@@ -17,7 +17,7 @@ type: list
 - Signals and Systems
 - Instruction Architectures and Compilers
 - Mathematics
-- Discrete Mathematics 
+- Discrete Mathematics ([notes](https://github.com/clemenkok/collegenotes/blob/main/Discrete_Mathematics.pdf))
 - Communications
 - Information Processing
 - Control Systems
