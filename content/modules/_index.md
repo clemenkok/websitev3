@@ -11,6 +11,7 @@ type: list
 - Programming for Engineers
 - Topics in Electrical Engineering 
 - Freshman Design Project
+- Japanese I
 - Extracurriculars: [Imperial Driverless](https://driverless.imperial.ac.uk/), Robotics Society
 
 #### Year 2 (Imperial College London Dept of EEE)
