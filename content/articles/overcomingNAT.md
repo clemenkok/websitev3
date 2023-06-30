@@ -1,7 +1,7 @@
 ---
 title: Network Address Translation and the Internet-of-Things
 type: page
-description: Connecting to our IoT devices from far away 
+description: The NAT Traversal Problem
 topic: career
 ---
 
@@ -11,7 +11,13 @@ I had the opportunity to plan and implement the software architecture for our Ye
 
 {{< figure src="/images/archilinkedin.png" title="" >}}
 
-Originally, I had intended to use REST APIs across our entire architecture. This was meant to standardise how our devices talked to our servers and vice versa. Soon however, we stumbled into a roadblock. I should have realised it earlier, but was prompted by a teamate. How would our IoT devices, with dynamic IP addresses, communicate with the servers? The servers had a static IP address thanks to an AWS EC2 Elastic IP Address, but our devices (connected to my mobile hotspot) did not. So, I struck to find a solution.  
+Originally, I had intended to use REST APIs across our entire architecture. This was meant to standardise how our devices talked to our servers and vice versa. Soon however, we stumbled into a roadblock. I should have realised it earlier, but was prompted by a teamate. We had bumped into the NAT Traversal problem. How would our IoT devices, without static IP addresses, communicate with the servers? The servers had a static IP address thanks to an AWS EC2 Elastic IP Address, but our devices (connected to my mobile hotspot) did not. 
+
+Our devices have dynamic IP addresses because of a technology called Network Address Translation (NAT). To conserve the limited number of IPv4 addresses on the public internet, our routers perform NAT, which means that they map private addresses inside a local network to a public IP address. But these external public IP addresses are not fixed.  
+
+So, I struck to find a solution.  
+
+### Solving the Problem
 
 #### Solution A: Port Forwarding 
 
