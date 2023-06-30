@@ -21,9 +21,13 @@ One issue that we faced during development was memory management. FreeRTOS has s
 
 {{< figure src="/images/crash.png" title="" >}}
 
-To overcome this, we had several primitives that we could use to 'lock' the memory location and prevent race conditions. This included the binary semaphore and the mutual exclusion (mutex). The binary semaphore was used at first; however it continued to cause problems as we continued to get core panic errors. It was used whenver I had to publish MQTT messages on the rover state machine task.   
+To overcome this, we had several primitives that we could use to 'lock' the memory location and prevent race conditions. This included the binary semaphore and the mutual exclusion (mutex). 
 
-After spending some time reading the docs, I had assumed that the Binary Semaphore and Mutex were similar. However, they weren't. This was why we kept getting errors. I've listed their differences below (taken from G2G):    
+The binary semaphore was used at first; however it continued to cause problems as we continued to get core panic errors. It was used whenver I had to publish MQTT messages on the rover state machine task.   
+
+After spending some time reading the docs, I had assumed that the Binary Semaphore and Mutex were similar. However, they weren't. This was why we kept getting errors.   
+
+I've listed their differences below (taken from G2G):    
 
 |Binary Semaphore|Mutex|
 |---|---|
@@ -33,9 +37,13 @@ After spending some time reading the docs, I had assumed that the Binary Semapho
 |Multiple number of threads can acquire binary semaphore at a time concurrently.|Only one thread can acquire mutex at a time|
 |Binary semaphore have no ownership.|There is ownership associated with mutex because only owner can release the lock.|
 |They are faster than mutex because any other thread/process can unlock binary semaphore.|They are slower than binary semaphores because only thread which has acquired must release the lock.|
-|If you have number of instances for resource it is better to use Binary semaphore.|If you have single instance for resource it is better to use mutex.|
+|If you have number of instances for resource it is better to use Binary semaphore.|If you have single instance for resource it is better to use mutex.|  
 
-So as you can see, the key issue was that the Rover state machine had a higher priority than our keep alive MQTT task, causing it to release the lock whenever the FreeRTOS scheduler performs a task switch. This caused potential memory corruption, leading to the core dump errors.  
+So as you can see, the key issue was that the Rover state machine had a higher priority than our keep alive MQTT task, causing it to release the lock whenever the FreeRTOS scheduler performs a task switch. This caused potential memory corruption, leading to the core dump errors. I had overlooked this part of the documentation:  
+
+```
+Mutexes are binary semaphores with a priority inheritance mechanism. This means that if a high priority task blocks while attempting to obtain a mutex (token) that is currently held by a lower priority task, then the priority of the task holding the token is temporarily raised to that of the blocking task.
+```
 
 The fix was simple: we just updated all our binary semaphores to mutexes. Worked like a charm! Now we were able to publish MQTT messages and run our MQTT keep-alive task simultaneously.  
 
