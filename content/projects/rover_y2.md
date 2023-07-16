@@ -8,7 +8,9 @@ topic: project
 
 {{< figure src="/images/aws.png" title="" >}}
 
-{{< figure src="/images/y2rover.png" title="" >}}
+{{< figure src="/images/archilinkedin.png" title="" >}}
+
+![]("/images/bb.gif")
 
 Developed self-balancing maze solver. Played role of full-stack software engineer for team project.  
 
