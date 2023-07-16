@@ -26,7 +26,7 @@ type: list
 - Computer Engineering Design Project
 - Extracurriculars: [Imperial Google Developer Student Clubs](https://gdsc.community.dev/imperial-college-of-science-technology-and-medicine/), Imperial Computational Cardiac Imaging Group
 - Talks Given: [Concepts in Cloud Security at Imperial Cybersecurity Society](https://www.youtube.com/watch?v=Mer43702Yyo&t=26s)
-- Internship: AWS ProServe Infrastructure and Security (Associate Consultant Intern)
+- Internship: AWS ProServe Infrastructure and Security (DevOps Consultant Intern)
 
 #### Year 3 (Imperial College London Dept of EEE / Dept of Computing)
 - TBC
