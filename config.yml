@@ -6,8 +6,8 @@ paginate: 5
 
 menu:
     main:
-        - name: Contact
-          url: /contact/
+        - name: About
+          url: /about/
           weight: 30
         - name: Articles
           url: /articles/
