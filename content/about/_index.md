@@ -4,7 +4,7 @@ type: list
 ---
 
 
-#### Associate DevOps Consultant Intern at Amazon Web Services. Imperial College London MEng Electronic and Information Engineering'25. Based in London, UK.
+#### Associate DevOps Consultant Intern at Amazon Web Services. Imperial College London Electronic and Information Engineering. Based in London, UK.
 
 My name is Clemen, and I am a student at Imperial College London. I am currently working at Amazon Web Services as a Associate DevOps Consultant Intern.   
 
