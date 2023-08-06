@@ -12,12 +12,14 @@ topic: career
 How true is this statement? To break it down, let's dive deep into Lambda networking internals.  
 
 {{< figure src="/images/lambdaprivate.png" title="" >}}
+*An architecture I found on re:Post when researching this topic*
 
 ### What is a VPC?
 
 The Amazon VPC is a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you can define. In a VPC, we control networking configuration can provide or restrict access between resources inside/outside a VPC and we can connect to other netwroks via a VPN or via AWS Direct Connect to physical networks.  
 
 {{< figure src="/images/vpc.png" title="" >}}
+*A common VPC architecture*
 
 ### Lambda Networking
 
@@ -26,6 +28,7 @@ How does Lambda work internally? Lambda functions run on compute resources manag
 By default, when you create a Lambda function, it has access to the entire internet and any AWS API. But it does not have access to private resources (i.e. inside a VPC).  
 
 {{< figure src="/images/vpclambda.png" title="" >}}
+*VPC-enabled Lambdas*
 
 According to AWS, if you want to access resources inside another VPC, you configure it to be VPC-enabled. This creates a VPC to VPC NAT and an ENI inside your VPC. You also only do this if your function needs access to VPC-based resources (see table below). This is much more secure than the alternative, which is to expose the VPC resources to be publicly available, thus making traffic route through the public Internet to access VPC resources.  
 
@@ -72,7 +75,7 @@ Cold start times were drastically reduced - dropping from 14.8s to 933ms, as per
 
 No. What actually happens is that at function creation, you configure the Lambda to be VPC-enabled. As I stated earlier, Lambdas always run inside the service VPC (managed by the Lambda Team), and use ENIs to interface with your VPC-based resources.   
 
-{{< figure src="/images/CONFIG.png" title="" >}}
+{{< figure src="/images/CONFIG.jpg" title="" >}}
 
 It's behaviour is not changed (you still invoke it via the invoke action, which is access controlled by IAM). The only thing is that you remove outbound internet access when doing so, so you would need to include a NAT Gateway and Internet Gateway in your VPC.  
 
