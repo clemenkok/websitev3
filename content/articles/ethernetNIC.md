@@ -144,29 +144,41 @@ The second is to deal with out of order packets. One observation is that TCP / U
 
 This ensures that traffic won't end up out of order. But it won't be spread evenly amongst the rings.  
 
+This technology is called Receive Side Scaling, and it distributes receive processing from a NIC across multiple CPUs.  
+
 #### TCP/IP Protocol Layering and Sockets
 
+While L4 deals mainly with interrupt handling, the TCP/IP protocol stack is maanged by higher layers. The OS networking stack will take into account the protocol of the incoming packet via its IP header, and then send it up the stack via the appropriate socket. Sockets provide an interface for applications to communicate over the network via system calls.  
 
 ### Layer 5 - Network 
 
+NICs require specific drivers to interface with the operating system. These drivers handle various tasks related to NIC operation.  
 
 #### Top Half / Botton Half Processing
 
+To effectively manage the incoming frames, NIC drivers split processing into two parts - the top half, which involves quickly acknowledging the interrupt and moving data from the NIC to the kernel, and the bottom half, which performs more resource-intensive processing.
 
 #### Protocol Handoff
 
+Depending on the protocl of the incoming data, the driver might hand off the packet to the appropriate protocol handler in the OS networking stack.
 
 #### Interrupt Coalescing
 
+To reduce the overhead of frequent interrupts, NIC drivers often batch multiple received frames into a single interrupt, reducing CPU usage.  
 
 #### Queues
 
+Queues within the NIC are used to manage incoming frames. If queues fill up due to high incoming traffic, there is a risk of dropped frames or buffer overflow. This leads to performance degredation and dropped connection. Thus, queues must be designed to handle bursts of traffic and maintain consistent performance. 
 
 ### Layer 6 - Presentation
 
-
 #### Cache Locality and IRQ Steering
 
+Many modern NICs aim to maintain good cache locality by optimising memory access patterns, reducing cache misses and improve data processing speed. Furthermore, IRQ steering can be used to distribute interrupts across multiple cores, improving parallelism and system performance.  
+
+#### Doesn't that sound like RSS?
+
+IRQ steering is similar to Receive Side Scaling in that both aim to distribute processing tasks across multiple CPUs to improve performance. However, RSS particularly focuses on optimising network traffic processing, while IRQ Steering is more broad and deals with distribuing interrupts from multiple hardware devices.  
 
 ### References
 
