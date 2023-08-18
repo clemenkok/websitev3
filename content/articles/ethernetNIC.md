@@ -12,7 +12,7 @@ Most of us use Ethernet in some way or another. Ethernet describes a family of w
 {{< figure src="/images/dcswitch.jpg" title="" >}}
 *A Typical Switch*
 
-I've always wondered what goes on after I plug in a CAT 5E cable into my switch. Previously, it would be a simple matter of plug-and-play (or plug and PuTTY in). Having recently learnt about Operating Systems, Digital Signal Processing and Computer Architecture through courses at Imperial, combined with hands-on experience doing Cloud Computing and Software Defined Networking through my work at AWS, I thought it would be time to re-examine this phenomenon. I also recently chanced upon Container Network Operating Systems and the SONiC ecosystem, which made me rediscover my interest in networking.   
+I've always wondered what goes on after I plug in a CAT 5E cable into my switch. Previously, it would be a simple matter of plug-and-play (or plug and PuTTY in). Having recently learnt about Operating Systems, Digital Signal Processing, Communication Systems and Computer Architecture through courses at Imperial, combined with hands-on experience doing Cloud Computing and Software Defined Networking through my work at AWS, I thought it would be time to re-examine this phenomenon. I also recently chanced upon Container Network Operating Systems and the SONiC ecosystem, which made me rediscover my interest in networking.   
 
 Do note that this post can get quite lengthy. I recommend you use the table of contents and jump to the respective OSI layer that you are interested in.  
 
@@ -25,7 +25,7 @@ The critical bit that I did not know about before college was the role of the Ne
 
 Interestingly, Virtual Machines (VMs) also have NICs - virtual ones (vNIC). Virtualisation emulates hardware components, including network adapters. Hypervisors create a virtual switch that handles communication between VMs and the physical network, with each vNIC connected to the virtual switch. Containers too have virtual network interfaces, which I previously worked with when I set up a docker network for my Year 2 Project. When a Docker container is created and a network is specified (think Docker Compose), Docker sets up a pair of virtual Ethernet interfaces, with one end attached to the Docker host network namespace, and the other inside the container network namespace.  
 
-#### Layer 1 - Physical
+### Layer 1 - Physical
 
 Back to the journey of a frame. We will explain this using the OSI layers as a framework - the benefit is that we can separate each layer and each layer doesn't depend on other layers. Think of a CAT 5e cable plugged into a switch. Now, raw electrical signals representing the Ethernet frame are received by the NIC in the switch (a frame is, like most data, fundamentally 0s and 1s). These signals are transmitted over physical medium - copper wires in this case. This section explains how the NIC hardware processes signals to extract bits that contain the Ethernet frame.    
 
@@ -66,7 +66,7 @@ Now we understand how bits are encoded and decoded by the NIC. We can therefore 
 {{< figure src="/images/preamble.png" title="" >}}
 *Ethernet Frame Preamble*
 
-Ethernet does not have a shared bit-clock (since none of the pins / conductors carries a clock signal). Hence, teh receiver must synchronise the bit clock to the sender's block with every packet. The preamble allows the receiver's Phase Locked Loops (special circuits to synchronise bit clocks) to have enough time to lock into synchronisation with the sender before dat bits are transmitted. Interestingly, we can think about why are 7 bytes needed for this - since the release of the 802.3 standard, have PLLs improved to the point where less than 7 bytes are needed? But changing things would be too much of a hassle.  
+Ethernet does not have a shared bit-clock (since none of the pins / conductors carries a clock signal). Hence, the receiver must synchronise the bit clock to the sender's block with every packet. The preamble allows the receiver's Phase Locked Loops (special circuits to synchronise bit clocks) to have enough time to lock into synchronisation with the sender before data bits are transmitted. Interestingly, we can think about why are 7 bytes needed for this - since the release of the 802.3 standard, have PLLs improved to the point where less than 7 bytes are needed? But changing things would be too much of a hassle.  
 
 The preamble is then followed by the Start Frame Delimiter (SFD), which is immediately followed by the destination MAC address. The SFD is distinguished from the Preamble because it consists of one byte that ends with 1 instead of 0.  
 
@@ -78,7 +78,7 @@ The preamble is then followed by the Start Frame Delimiter (SFD), which is immed
 
 Great! Now we can move on to MAC addresses. MAC stands for Media Access Control - a unique identifier assigned to the NIC.  
 
-Let us start by defining the main 'features' of a NIC ([source](https://www.tritondatacenter.com/blog/virtualizing-nics)):
+Let us start by defining the main 'features' of a NIC:
 - It has a MAC Address that can be used to filter incoming packets
 - It has a ring buffer to store packets received
 - It has a ring buffer to store packets to be sent
@@ -115,13 +115,34 @@ The ring consists of multiple entries, with each entry called a descriptor. A de
 
 #### Interrupt Generation
 
-When a packet arrives, the network card will generatea an interrupt, letting the OS know that it should check the ring. 
-
-#### Receive Side Scaling
+When a packet arrives, the network card will generate an interrupt, letting the OS know that it should check the ring. 
 
 ### Layer 4 - Transport
 
-Now we can go further into how we obtain data from the payload inside the MAC frame.
+How does the CPU handle incoming data? What are the mechanisms to process the incoming Ethernet frame?  
+
+#### Receive Side Scaling
+
+A naive implementation of this process will inevitably cause performance issues. Hence, there is a need to optimise. Assume that we have an interrupt that fires whenever packets are successfully received or transmitted. If there was only a single interrupt used and that vector maps to a single CPU, that one CPU would process the entire stream of packets. In many systems - the CPU would process that packet all the way thorugh the TCP/IP stack until it reaches a socket buffer for an application to read.  
+
+This creates problems - (1) that CPU is spending all its time handling interrupts, and is unable to do user work; (2) this might cause increased latency for incoming packets due to processing time.  
+
+{{< figure src="/images/intel.png" title="" >}}
+*Intel i9-12900K Processor - 16 total cores, 24 total threads*
+
+This problem was especially prevalent on early single CPU systems. Many systems only had a single socket with a single CPU, with no hardware threads and cores. So as new platforms began to enable multi-processing, there needed to be a way for NICs to take advantage of horizontal scalability.  
+
+While we could use multiple threads for the same ring, this causes problems as well - instead of a single CPU being 100% busy, we will end up with several CPUs busy and spending a lot of time blocked on locks. The problem is that shared state still exists in the form of the ring itself.  
+
+Furthermore, TCP also implements logic to deal with out of order packets - in many TCP stacks, when a packet is out of order, network throttling or retransmission will occur, injecting notable latency and performance impacts (read my Software Systems study notes for more information [here](https://github.com/clemenkok/collegenotes/blob/main/Software_Systems.pdf)).  
+
+With lock ordering and the scheduler, packets can easily arrive out of order. So we need to make sure that we don't allow packets to be delivered out of order, and we also want to avoid sharing data structures protected by the same lock.  
+
+The first solution is to add a bunch more rings to the NIC - so no resources are shared at all.  
+
+The second is to deal with out of order packets. One observation is that TCP / UDP connections always go to the same place. What we can do is assign a given connection to a ring. For a given TCP connection,  the source and destination IP address and source and destination ports are the same throughout the lifetime of the connection. Thus, we can assign by hashing. NICs have a hash function that takes into account various fields in the header that are constant to produce a hash value.  
+
+This ensures that traffic won't end up out of order. But it won't be spread evenly amongst the rings.  
 
 #### TCP/IP Protocol Layering and Sockets
 
@@ -145,3 +166,9 @@ Now we can go further into how we obtain data from the payload inside the MAC fr
 
 
 #### Cache Locality and IRQ Steering
+
+
+### References
+
+- [Triton Data Center Blog](https://www.tritondatacenter.com/blog/virtualizing-nics)
+- [Receive Side Scaling: Microsoft](https://learn.microsoft.com/en-us/windows-hardware/drivers/network/introduction-to-receive-side-scaling)
