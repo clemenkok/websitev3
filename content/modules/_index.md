@@ -29,4 +29,14 @@ type: list
 - Internship: AWS ProServe Infrastructure and Security (DevOps Consultant Intern)
 
 #### Year 3 (Imperial College London Dept of EEE / Dept of Computing)
-- TBC
+- Machine Learning
+- Advanced Computer Architecture
+- Communication Systems
+- Advanced Databases
+- System Performance Engineering
+- Distributed Algorithms
+- Statistical Signal Processing and Inference
+- Finance and Financial Management 
+- Extracurriculars: [Imperial College Data Science Society](https://imperialdatasoc.co.uk/) Intermediate Workshop - Algorithmic Trading Engine and Advanced Analytics Project
+
+Some stuff I want to explore: HPC system administration at Imperial, open-source contributions for Kubernetes / eBPF, Homelabbing
