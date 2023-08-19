@@ -12,7 +12,7 @@ Most of us use Ethernet in some way or another. Ethernet describes a family of w
 {{< figure src="/images/dcswitch.jpg" title="" >}}
 *A Typical Switch*
 
-I've always wondered what goes on after I plug in a CAT 5E cable into my switch. Previously, it would be a simple matter of plug-and-play (or plug and PuTTY in). Having recently learnt about Operating Systems, Digital Signal Processing, Communication Systems and Computer Architecture through courses at Imperial, combined with hands-on experience doing Cloud Computing and Software Defined Networking through my work at AWS, I thought it would be time to re-examine this phenomenon. I also recently chanced upon Container Network Operating Systems and the SONiC ecosystem, which made me rediscover my interest in networking.   
+I've always wondered what goes on after I plug in a CAT 5E cable into my switch. Previously, it would be a simple matter of plug-and-play (or plug and PuTTY in). Having recently learnt about Operating Systems, Digital Signal Processing, Communication Systems and Computer Architecture through courses at Imperial, combined with hands-on experience with Software Defined Networking and some exposure to 5G core through my work at AWS, I thought it would be time to re-examine this phenomenon. I also recently chanced upon Container Network Operating Systems and the SONiC ecosystem, which made me rediscover my interest in networking.   
 
 Do note that this post can get quite lengthy. I recommend you use the table of contents and jump to the respective OSI layer that you are interested in.  
 
@@ -127,7 +127,7 @@ A naive implementation of this process will inevitably cause performance issues.
 
 This creates problems - (1) that CPU is spending all its time handling interrupts, and is unable to do user work; (2) this might cause increased latency for incoming packets due to processing time.  
 
-{{< figure src="/images/intel.png" title="" >}}
+{{< figure src="/images/intel.jpg" title="" >}}
 *Intel i9-12900K Processor - 16 total cores, 24 total threads*
 
 This problem was especially prevalent on early single CPU systems. Many systems only had a single socket with a single CPU, with no hardware threads and cores. So as new platforms began to enable multi-processing, there needed to be a way for NICs to take advantage of horizontal scalability.  
