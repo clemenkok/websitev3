@@ -38,5 +38,6 @@ type: list
 - Statistical Signal Processing and Inference
 - Finance and Financial Management 
 - Extracurriculars: [Imperial College Data Science Society](https://imperialdatasoc.co.uk/) Intermediate Workshop - Algorithmic Trading Engine and Advanced Analytics Project
+- OSS Contributions: KubeArmor Project
 
-Some stuff I want to explore: HPC system administration at Imperial, open-source contributions for Kubernetes / eBPF, Homelabbing
+Some stuff I want to explore: HPC system administration at Imperial, Homelabbing
