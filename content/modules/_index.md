@@ -34,7 +34,7 @@ type: list
 - Communication Systems
 - Advanced Databases
 - System Performance Engineering
-- Distributed Algorithms
+- Deep Learning
 - Statistical Signal Processing and Inference
 - Finance and Financial Management 
 - Extracurriculars: [Imperial College Data Science Society](https://imperialdatasoc.co.uk/) Intermediate Workshop - Algorithmic Trading Engine and Advanced Analytics Project
