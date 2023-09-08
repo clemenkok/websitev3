@@ -21,10 +21,20 @@ I think the key turning point for me was (1) encountering algorithms in SRE work
 
 That moment connected the dots between Leetcode (algorithmic puzzles) and SRE work. It was where I realised that algorithms do have a place in infrastructure; and if we want to know how our infrastructure works (and therefore, how to best optimise it), we need to understand algorithms. I began to encounter more and more examples of this - LRU cache algorithm, Optimal Routing (Djikstra), Leaky Bucket algorithm, Ring buffers in networking. When I read Designing Data Intensive Applications, I was surprised to see so much coverage on Algorithms and Data Structures in Database design - it felt as though my software systems course was super inadequate (inspiring me to take a focused, advanced databases course in Year 3).  
 
+
+{{< figure src="/images/btree.png" title="" >}}
+
 In a DBMS, balanced trees (BTrees) are used to create indexes in database tables. This enables fast location of data during search operations with logarithmic time, such as when you do a `SELECT` statement in SQL. This happens because BTrees are balanced, which means that the depth of the tree is relatively constant as data is inserted and removed (the tree height is logarithmic in relation to the number of elements, causing the worse-case lookup time to be `O(logn)`).  
 
 I can find numerous other examples across Operating Systems to Networking and other typical infra-related topics where Algorithms and Data Structures can be found. So if you want to know how a system works, and more importantly, how it is optimised, it eventually boils down to algorithms and data structures.  
 
 ### Coding Assessments
 
-So 
+So here's where I get to coding assessments. My very first coding assessment was not your typical Hackerrank. It was a live interview with a startup. I was quite surprised because I felt that my flow was very natural in spite of my lack of practice. The question was essentially a somewhat complex matrix manipulation question, but I had a working algorithm (though it took me quite long to implement), which the interviewer was okay with.  
+
+My very next assessment was online (Hackerrank). There I encountered my first Graph question and was stumped (flood fill). I didn't know how to implement DFS/BFS at the time, and couldn't pass a single testcase. But again, I felt that my skill had gone up with every assessment that I took.  
+
+Eventually (many months later), I was able to do a codility challenge, see the problem and formulate the solution immediately, solving the question in <5min. This made me feel like I had some progress.  
+
+Presently, I am still trying to improve at Graph / DP questions, which I feel is my weak point. Seems like this will be the next turning point for me - most whiteboarding questions will require some form of Graph / DP skill.  
+
