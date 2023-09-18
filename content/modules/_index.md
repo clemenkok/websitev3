@@ -37,5 +37,5 @@ type: list
 - Deep Learning
 - Statistical Signal Processing and Inference
 - Finance and Financial Management 
-- Extracurriculars: [Imperial College Data Science Society](https://imperialdatasoc.co.uk/), [Student Cluster Competition UK Imperial Team](https://www.scd.stfc.ac.uk/Pages/CIUK-2023-Cluster-Challenge.aspx) Intermediate Workshop - Algorithmic Trading Engine and Advanced Analytics Project
+- Extracurriculars: [Imperial College Data Science Society](https://imperialdatasoc.co.uk/), [Student Cluster Competition UK Imperial Team](https://www.scd.stfc.ac.uk/Pages/CIUK-2023-Cluster-Challenge.aspx) 
 - OSS Contributions: KubeArmor Project
