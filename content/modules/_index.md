@@ -31,8 +31,8 @@ type: list
 #### Year 3 (Imperial College London Dept of EEE / Dept of Computing)
 - Machine Learning
 - Advanced Computer Architecture
-- Communication Systems
-- Advanced Databases
+- Type Systems for Programming Languages
+- Data Processing Systems
 - System Performance Engineering
 - Deep Learning
 - Statistical Signal Processing and Inference
