@@ -36,6 +36,9 @@ type: list
 - System Performance Engineering
 - Deep Learning
 - Statistical Signal Processing and Inference
-- Finance and Financial Management 
+- Finance and Financial Management
+- Group Consultancy Project
+- Graphics (Audit)
+- Computer Vision (Audit) 
 - Extracurriculars: [Imperial College Data Science Society](https://imperialdatasoc.co.uk/), [Student Cluster Competition UK Imperial Team](https://www.scd.stfc.ac.uk/Pages/CIUK-2023-Cluster-Challenge.aspx) 
-- OSS Contributions: KubeArmor Project
+- Talks Given: [Building Data Platforms at Imperial College Data Science Society](https://www.youtube.com/watch?v=31Cc80D8oTQ&t=5s)
