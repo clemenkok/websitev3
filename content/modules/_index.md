@@ -30,9 +30,9 @@ type: list
 
 #### Year 3 (Imperial College London Dept of EEE / Dept of Computing)
 - Machine Learning
-- Advanced Computer Architecture
+- Advanced Computer Architecture ([notes](https://github.com/clemenkok/collegenotes/blob/main/ACA_Summary.pdf))
 - Principles of Classical and Modern Radar
-- Data Processing Systems
+- Data Processing Systems ([notes](https://github.com/clemenkok/collegenotes/blob/main/DPS_Summary.pdf))
 - Deep Learning
 - Distributed Algorithms
 - Computer Vision
