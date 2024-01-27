@@ -33,11 +33,10 @@ type: list
 - Advanced Computer Architecture
 - Principles of Classical and Modern Radar
 - Data Processing Systems
-- System Performance Engineering
+- Deep Learning
 - Distributed Algorithms
-- Statistical Signal Processing and Inference
+- Computer Vision
 - Finance and Financial Management
 - Group Consultancy Project
-- Graphics
 - Extracurriculars: [Imperial College Data Science Society](https://imperialdatasoc.co.uk/), [Student Cluster Competition UK Imperial Team](https://www.scd.stfc.ac.uk/Pages/CIUK-2023-Cluster-Challenge.aspx) 
 - Talks Given: [Building Data Platforms at Imperial College Data Science Society](https://www.youtube.com/watch?v=31Cc80D8oTQ&t=5s)
