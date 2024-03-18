@@ -40,6 +40,8 @@ type: list
 - Group Consultancy Project
 - Extracurriculars: [Imperial College Data Science Society](https://imperialdatasoc.co.uk/), [Student Cluster Competition UK Imperial Team](https://www.scd.stfc.ac.uk/Pages/CIUK-2023-Cluster-Challenge.aspx) 
 - Talks Given: [Building Data Platforms at Imperial College Data Science Society](https://www.youtube.com/watch?v=31Cc80D8oTQ&t=5s)  
+- TA for Software Systems  
+- Software Engineer (iOS) @ Naeo Nutrition  
 
 #### Year 4 (Imperial College London Dept of EEE / Dept of Computing - MEng year)
-- ?  
+- TBC
