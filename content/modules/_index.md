@@ -34,9 +34,12 @@ type: list
 - Principles of Classical and Modern Radar
 - Data Processing Systems ([notes](https://github.com/clemenkok/collegenotes/blob/main/DPS_Summary.pdf))
 - Deep Learning
-- Distributed Algorithms
-- Computer Vision
+- Distributed Algorithms ([notes](https://github.com/clemenkok/collegenotes/blob/main/DA_Summary.pdf))
+- Computer Vision ([notes](https://github.com/clemenkok/collegenotes/blob/main/CV_Summary.pdf))
 - Finance and Financial Management
 - Group Consultancy Project
 - Extracurriculars: [Imperial College Data Science Society](https://imperialdatasoc.co.uk/), [Student Cluster Competition UK Imperial Team](https://www.scd.stfc.ac.uk/Pages/CIUK-2023-Cluster-Challenge.aspx) 
-- Talks Given: [Building Data Platforms at Imperial College Data Science Society](https://www.youtube.com/watch?v=31Cc80D8oTQ&t=5s)
+- Talks Given: [Building Data Platforms at Imperial College Data Science Society](https://www.youtube.com/watch?v=31Cc80D8oTQ&t=5s)  
+
+#### Year 4 (Imperial College London Dept of EEE / Dept of Computing - MEng year)
+- ?  
