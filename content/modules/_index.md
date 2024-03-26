@@ -23,8 +23,8 @@ type: list
 - Communications
 - Information Processing
 - Control Systems
-- Computer Engineering Design Project
-- Extracurriculars: [Imperial Google Developer Student Clubs](https://gdsc.community.dev/imperial-college-of-science-technology-and-medicine/), Imperial Computational Cardiac Imaging Group
+- Computer Engineering Design Project - [Autonomous Maze Solver](https://github.com/clemenkok/BalanceBug)    
+- Extracurriculars: [Imperial Google Developer Student Clubs](https://gdsc.community.dev/imperial-college-of-science-technology-and-medicine/), [Imperial Computational Cardiac Imaging Group - O'Regan Lab](https://oreganlab.org)
 - Talks Given: [Concepts in Cloud Security at Imperial Cybersecurity Society](https://www.youtube.com/watch?v=Mer43702Yyo&t=26s)
 - Internship: AWS ProServe Infrastructure and Security (DevOps Consultant Intern)
 
