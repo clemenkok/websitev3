@@ -37,7 +37,7 @@ type: list
 - Distributed Algorithms ([notes](https://github.com/clemenkok/collegenotes/blob/main/DA_Summary.pdf))
 - Computer Vision ([notes](https://github.com/clemenkok/collegenotes/blob/main/CV_Summary.pdf))
 - Finance and Financial Management
-- Group Consultancy Project
+- Group Consultancy Project [Oshensail](https://www.oshensail.com) - Machine Learning on Sonar Data for ASVs  
 - Extracurriculars: [Imperial College Data Science Society](https://imperialdatasoc.co.uk/), [Student Cluster Competition UK Imperial Team](https://www.scd.stfc.ac.uk/Pages/CIUK-2023-Cluster-Challenge.aspx) 
 - Talks Given: [Building Data Platforms at Imperial College Data Science Society](https://www.youtube.com/watch?v=31Cc80D8oTQ&t=5s)  
 - TA for Software Systems  
