@@ -47,7 +47,7 @@ params:
         title: Clemen Kok
         description: |
 
-          Electronic & Information Engineering at Imperial College.
+          Developer. * Enthusiast.
         
 
         imageUrl: "/images/profile.png"
@@ -55,8 +55,8 @@ params:
         imageWidth: 0
         imageHeight: 0
         buttons:
-            - name: Random Blog Article
-              url: "/articles/gdsc"
+            - name: Start Reading
+              url: "/articles/lambdasecurity"
     mainSections:
       - articles
 
