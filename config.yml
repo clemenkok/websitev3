@@ -12,12 +12,6 @@ menu:
         - name: Articles
           url: /articles/
           weight: 20
-        - name: Projects
-          url: /projects/
-          weight: 15
-        - name: Modules
-          url: /modules/
-          weight: 10
 
      # - name: Categories
         #   url: /categories/
