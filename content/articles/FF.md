@@ -31,7 +31,7 @@ At large, there is an ongoing debate on whether society should be led by general
 
 ---
 
-Let me caveat that I am not a trained biologist. But, even nature has her own take on this debate. The humble cockroach is the generalist - it thrives in most environmental conditions and consumes most organic matter. The koala sits on the opposite side of that spectrum.  
+Let me caveat that I am not a trained biologist. But, even nature has her own take on this debate. The humble cockroach is the generalist - it thrives in most environmental conditions and consumes most organic matter. The koala sits on the opposite side of that spectrum. Its fate is to perish in the wildfire, or stay in the zoo.   
 
 These species pay a trade off for their evolved behaviours. Generalists may lose to specialists in stable environments, competing with them for the same food. Yet they flourish in instability.  
 
