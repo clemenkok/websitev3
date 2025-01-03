@@ -17,6 +17,10 @@ But where does the pillar end? Should we keep ascending up a single pillar? And 
 
 Is the British academic system right to force everyone up a single bark? Specialisation is important, but only to a degree. Wiggle room should be encouraged at the top - cross-pollination. A great way to do this is to release a pool of courses for other departments. The EE Department here allows other engineering majors to take courses in Optimisation and Sustainable Electrical Systems. This is clearly useful knowledge for any engineer. But should it solely be limited to engineers? Barring class capacity, what about the scientists?  
 
+
+{{< figure src="/images/Bookmarks.png" title="" >}}
+*My Bookmarks tab. Varied interests but admittedly, I am a master of none. Robotics simulations, Power System Analysis, Reverse Engineering, Bayesian Statistics, inter alia.*
+
 ---
 
 Should we strive towards a society of hyper-specialisation? The recent outrage against the award of a Nobel prize in Physics to machine learning researchers implies a rejection of cross-pollination in science. When interdisciplinary work is shunned upon, we miss out on major breakthroughs. Deep specialism does not imply that we cannot specialise in multiple areas. As Feynman says, specialisation is for insects.  
