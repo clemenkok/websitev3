@@ -19,7 +19,7 @@ Is the British academic system right to force everyone up a single bark? Special
 
 
 {{< figure src="/images/Bookmarks.png" title="" >}}
-*My Bookmarks tab. Varied interests but admittedly, I am a master of none. Robotics simulations, Power System Analysis, Reverse Engineering, Bayesian Statistics, inter alia.*
+*My Bookmarks. Varied interests but admittedly, a master of none. Robotics and Control, Power System Analysis, Reverse Engineering, Bayesian Statistics, inter alia.*
 
 ---
 
