@@ -9,7 +9,9 @@ The goal of this is to elucidate to non-technical readers and technical readers 
 
 > TL;DR: Software development has become much faster with AI. At its current growth rate, there is some possibility of displacement. But making products are more fun than ever.  
 
-#### On AI Anxiety
+---
+
+### On AI Anxiety
 
 Language Models have achieved staggering jumps in performance both in benchmarks and our lived realities.  
 
@@ -25,13 +27,11 @@ On the early days of Advent of Code, we saw the leaderboard being dominated by s
 
 I related to the anxiety here. GPT could finish some of my assignments flawlessly.  
 
-Do we need as many coders? Let's think about it. If you consider the amount of software/products that the world needs, $S$,  as a linearly growing function, then I think not. But if you consider this function to be non-linear, then yes, we will need more engineers.  
+Do we need as many coders? Let's think about it. If you consider the amount of software/products that the world needs, `S`,  as a linearly growing function, then I think not. But if you consider this function to be non-linear, then yes, we will need more engineers.  
 
 I define this function by technical possibilities (what is achievable with today's science and technology) and problems (what kinds of problems are we facing).  
 
-$$
-S = T \star P
-$$
+```S = T * P``  
 
 This equation includes feedback and is highly coupled. Software solves problems but could make them higher too (think: building explainability software on top of AI).  
 
@@ -49,7 +49,9 @@ If you are appraised by the number and quality of pull-requests,  I would worry 
 
  I'm still happy my workflow requires me to be in the IDE, even though I write less code. Someone's definitely working on an IDE for agents.  
 
-#### Development becomes Supervision
+---
+
+### Development becomes Supervision
 
 In 2021, I was learning programming by watching tutorials on YouTube and copying code from the Internet. I felt creative when defining what code to write (i.e., what I need from this function).  
 
@@ -71,7 +73,9 @@ Moving forward, I would like to see AI evaluate its own output. Humans must be a
 
 > I haven't tried Operator, but I am hopeful that it is better; surely OpenAI staff have tried Computer Use.
 
-#### On Agents
+---
+
+### On Agents
 
 Some startups are working on agents that will take over the entire software development pipeline, from Development, to QA, to Data Science. But present models (I have not tried o3) still get stuck on edge cases and must know when to give up and seek human intervention.   
 
@@ -87,9 +91,11 @@ We could see more agent deployments in 2025. Startups such as Browser Use will h
 
 Interpretability and deciding the limits of supervision will decide the success of agent implementations.  
 
-#### Meta-Discussion
+---
 
-##### Should you still study Computer Science?
+### Meta-Discussion
+
+#### Should you still study Computer Science?
 
 Yes, but do a double major in engineering, business, humanities or a science (includes mathematics). Interpolate between these disciplines and it'll make you a more useful engineer who can not just code, but contribute new perspectives. This leads to research/startup ideas and greater odds of taking them to fruition.   
 
@@ -99,9 +105,9 @@ Be a hedgehog, not a fox.
 
 For individuals interested in hardware (EE/MechE), it would be sensible to go into robotics - it seems that the present trajectory of AI is bounded by it's ability to impact the real world. Power systems seem to also be another good track.  
 
-> Yes, AI can build and produce (order?) its own hardware, and orchestrate them via API calls. But on its own without human intervention? Not until we see the first, commercially-viable humanoids, but this doesn't seem too far away.  
- 
-##### How should we appraise engineers?
+> Yes, AI can build and produce (order?) its own hardware, and orchestrate them via API calls. But on its own without human intervention? Not until we see the first, commercially-viable, safe humanoids, but this seems challenging. We are likely 5-10 years away from solving Wozniak's coffee problem.
+
+#### How should we appraise engineers?
 
 Individuals should be appraised on personal interactions, problem-solving, ability to innovate (a sense for product-market fit), and passion. Referrals matter more than ever.    
 
@@ -111,9 +117,11 @@ More importantly, examine how developers use AI. Do they use it blindly by copy 
 
 Lastly, project-based assessments which incorporate elements of Product Market Fit, Solution Architecture and design trade-offs should be the way to go (such as taking on original research and then performing oral examinations).   
 
+---
+
 If you would like to comment or discuss, please direct it to clemen (dot) kok (at) gmail (dot) com.  
 
-[0] https://www.unicornds.org/advent-of-code-in-the-advent-of-ai-an-analysis-on-yearly-solve-times/
-[1]  https://news.ycombinator.com/item?id=42473321
-[2] https://www.youtube.com/watch?v=wCr_Gc6hmFo&t=2s
-[3] https://asim.bearblog.dev/how-a-single-chatgpt-mistake-cost-us-10000/
+[0] https://www.unicornds.org/advent-of-code-in-the-advent-of-ai-an-analysis-on-yearly-solve-times/  
+[1] https://news.ycombinator.com/item?id=42473321  
+[2] https://www.youtube.com/watch?v=wCr_Gc6hmFo&t=2s  
+[3] https://asim.bearblog.dev/how-a-single-chatgpt-mistake-cost-us-10000/  
