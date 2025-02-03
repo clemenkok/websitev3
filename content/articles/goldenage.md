@@ -105,7 +105,7 @@ Be a hedgehog, not a fox.
 
 For individuals interested in hardware (EE/MechE), it would be sensible to go into robotics - it seems that the present trajectory of AI is bounded by it's ability to impact the real world. Power systems seem to also be another good track.  
 
-> Yes, AI can build and produce (order?) its own hardware, and orchestrate them via API calls. But on its own without human intervention? Not until we see the first, commercially-viable, safe humanoids, but this seems challenging. We are likely 5-10 years away from solving Wozniak's coffee problem.
+> Yes, AI can build and produce (order?) its own hardware, and orchestrate them via API calls. But on its own without human intervention? Not until we see the first, commercially-viable, safe humanoids, but this seems challenging. We are likely 3-5 years away from solving Wozniak's coffee problem.
 
 #### How should we appraise engineers?
 
