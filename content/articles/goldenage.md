@@ -21,9 +21,9 @@ I would get code that would not compile on 3.5 and 4. It would require some adju
 
 This set up a very tight feedback loop for software engineering and led to a major jump in efficiency. It would still fail edge cases, particularly for more niche development efforts that use less popular open source software (e.g. developing for a less well-known CMS). o1 would solve these edge cases to a surprising degree.  
 
-On the early days of Advent of Code, we saw the leaderboard being dominated by submissions that were clearly AI generated, with the latest ones in a matter of seconds [0].  What use is a human then? Are we just there to define requirements, prompt and refine? Will you ever need to write a line of code?  
+On the early days of Advent of Code, we saw the leaderboard being dominated by submissions that were clearly AI generated, with the latest ones in a matter of seconds [0](https://www.unicornds.org/advent-of-code-in-the-advent-of-ai-an-analysis-on-yearly-solve-times/).  What use is a human then? Are we just there to define requirements, prompt and refine? Will you ever need to write a line of code?  
 
-> Hacker News: "I will for sure miss the days when writing code, or coder is still a real business." [1]
+> Hacker News: "I will for sure miss the days when writing code, or coder is still a real business." [1](https://news.ycombinator.com/item?id=42473321)
 
 I related to the anxiety here. GPT could finish some of my assignments flawlessly.  
 
@@ -69,7 +69,7 @@ Now, transformers have enabled us to prompt the requirements or interface we wan
 
 Being able to give my entire codebase in GitHub Copilot aids with the context problem. Claude 3.5-Sonnet seems to give much more focused results. o1's reasoning is great but it's output must be constrained by the user, less it 'spasms' and over-generates code that I was not looking for. I also do not appreciate getting rate-limited so quickly, hence needing to revert to ChatGPT sometimes.   
 
-Moving forward, I would like to see AI evaluate its own output. Humans must be able to oversee and intervene. AI doesn't have the context of our mental space, and sometimes hallucinates. I had hoped to see this with Anthropic's Computer Use, but from our experience in ICHack 2025 [2], it still in beta mode and difficult to use.
+Moving forward, I would like to see AI evaluate its own output. Humans must be able to oversee and intervene. AI doesn't have the context of our mental space, and sometimes hallucinates. I had hoped to see this with Anthropic's Computer Use, but from our experience in ICHack 2025 where we tried to build a research agent [2](https://www.youtube.com/watch?v=wCr_Gc6hmFo&t=2s), it still in beta mode and difficult to use.
 
 > I haven't tried Operator, but I am hopeful that it is better; surely OpenAI staff have tried Computer Use.
 
@@ -79,7 +79,7 @@ Moving forward, I would like to see AI evaluate its own output. Humans must be a
 
 Some startups are working on agents that will take over the entire software development pipeline, from Development, to QA, to Data Science. But present models (I have not tried o3) still get stuck on edge cases and must know when to give up and seek human intervention.   
 
-There are financial reasons why humans should not trust AI's output blindly. For example, AI hallucination cost one startup $10K USD [3].   
+There are financial reasons why humans should not trust AI's output blindly. For example, AI hallucination cost one startup $10K USD [3](https://asim.bearblog.dev/how-a-single-chatgpt-mistake-cost-us-10000/).   
 
 It is likely that AI will continue to develop at its present pace, given new scaling laws from test-time compute promising gains that have not been eked out. It could be possible to have an agent focus on QA, and approve this at a human-level, before letting the development agent iterate and achieve the stated requirements whilst being rigorously examined by the QA agent with human supervision.   
 
@@ -120,6 +120,8 @@ Lastly, project-based assessments which incorporate elements of Product Market F
 ---
 
 If you would like to comment or discuss, please direct it to clemen (dot) kok (at) gmail (dot) com.  
+
+> Spotted a [tautology](https://dictionary.cambridge.org/dictionary/english/tautology) or error? I'd really appreciate an email.
 
 [0] https://www.unicornds.org/advent-of-code-in-the-advent-of-ai-an-analysis-on-yearly-solve-times/  
 [1] https://news.ycombinator.com/item?id=42473321  
