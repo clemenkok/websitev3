@@ -31,7 +31,7 @@ Do we need as many coders? Let's think about it. If you consider the amount of s
 
 I define this function by technical possibilities (what is achievable with today's science and technology) and problems (what kinds of problems are we facing).  
 
-```S = T * P``  
+```S = T * P```  
 
 This equation includes feedback and is highly coupled. Software solves problems but could make them higher too (think: building explainability software on top of AI).  
 
