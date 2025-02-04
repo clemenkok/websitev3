@@ -37,7 +37,7 @@ This equation includes feedback and is highly coupled. Software solves problems 
 
 `T` goes up with time but some fields are showing signs of plateaunation (physics), while others are exponentially growing (computing, biotechnology).  
 
-`P` oscillates. Globalisation, economic and scientific development have solved many of humanity's low-level problems. But the difficult problems remain - e.g. climate change and cancer - and even if science finds a way, political factors could deter them from being solved easily. I don't think these problems are unsolvable. New problems could also emerge from developments in T - think AI safety and explainability.  
+`P` oscillates. Globalisation, economic and scientific development have solved many of humanity's low-level problems. But the difficult problems remain - e.g. climate change and cancer - and even if science finds a way, political factors could deter them from being solved easily. I don't think these problems are unsolvable. New problems could also emerge from developments in `T` - think AI safety and explainability.  
 
 I view `S` as increasing.  
 
@@ -45,7 +45,7 @@ Our software needs are not bounded. It's about identifying new products and deve
 
 If you are appraised by the number and quality of pull-requests,  I would worry about job security. Businesses will likely need less code monkeying - a startup could work with 1 full-stack engineer instead of 3 engineers for frontend, backend and ML.  
 
-> For non-SaaS startups, you still need engineers from other disciplines to be in the team.  Unfortunately, the pool of engineers who did both computer science and X engineering is anecdotally, not large! For SaaS startups, having UX/Design is still extremely important, and best if not coupled with software engineering for rapid iteration.
+> For non-SaaS startups, you still need engineers from other disciplines to be in the team.  Unfortunately, the pool of engineers who did both computer science and $engineering is anecdotally, not large! For SaaS startups, having UX/Design is still extremely important, and best if not coupled with software engineering for rapid iteration.
 
  I'm still happy my workflow requires me to be in the IDE, even though I write less code. Someone's definitely working on an IDE for agents.  
 
@@ -69,7 +69,7 @@ Now, transformers have enabled us to prompt the requirements or interface we wan
 
 Being able to give my entire codebase in GitHub Copilot aids with the context problem. Claude 3.5-Sonnet seems to give much more focused results. o1's reasoning is great but it's output must be constrained by the user, less it 'spasms' and over-generates code that I was not looking for. I also do not appreciate getting rate-limited so quickly, hence needing to revert to ChatGPT sometimes.   
 
-Moving forward, I would like to see AI evaluate its own output. Humans must be able to oversee and intervene. AI doesn't have the context of our mental space, and sometimes hallucinates. I had hoped to see this with Anthropic's Computer Use, but from our experience in ICHack 2025 where we tried to build a research agent [2](https://www.youtube.com/watch?v=wCr_Gc6hmFo&t=2s), it still in beta mode and difficult to use.
+Moving forward, I would like to see AI evaluate its own output. Humans must be able to oversee and intervene. AI doesn't have the context of our mental space, and sometimes hallucinates. I had hoped to see this with Anthropic's Computer Use, but from our experience in ICHack 2025 where we tried to build a research agent [2](https://www.youtube.com/watch?v=wCr_Gc6hmFo&t=2s), it's still in beta mode and difficult to use.
 
 > I haven't tried Operator, but I am hopeful that it is better; surely OpenAI staff have tried Computer Use.
 
