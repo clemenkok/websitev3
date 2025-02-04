@@ -35,11 +35,11 @@ I define this function by technical possibilities (what is achievable with today
 
 This equation includes feedback and is highly coupled. Software solves problems but could make them higher too (think: building explainability software on top of AI).  
 
-T goes up with time but some fields are showing signs of plateaunation (physics), while others are exponentially growing (computing, biotechnology).  
+`T` goes up with time but some fields are showing signs of plateaunation (physics), while others are exponentially growing (computing, biotechnology).  
 
-P oscillates. Globalisation, economic and scientific development have solved many of humanity's low-level problems. But the difficult problems remain - e.g. climate change and cancer - and even if science finds a way, political factors could deter them from being solved easily. I don't think these problems are unsolvable. New problems could also emerge from developments in T - think AI safety and explainability.  
+`P` oscillates. Globalisation, economic and scientific development have solved many of humanity's low-level problems. But the difficult problems remain - e.g. climate change and cancer - and even if science finds a way, political factors could deter them from being solved easily. I don't think these problems are unsolvable. New problems could also emerge from developments in T - think AI safety and explainability.  
 
-I view S as increasing.  
+I view `S` as increasing.  
 
 Our software needs are not bounded. It's about identifying new products and developing them so as to be useful to people, businesses and government. With a Cambrian Explosion in products (both startups and BigCo), there will be more to be done (and thus more engineers are needed).  
 
