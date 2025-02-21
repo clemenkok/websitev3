@@ -23,7 +23,7 @@ Is the British academic system right to force everyone up a single bark? Special
 
 ---
 
-Should we strive towards a society of hyper-specialisation? The recent outrage against the award of a Nobel prize in Physics to machine learning researchers implies a rejection of cross-pollination in science. When interdisciplinary work is shunned upon, we miss out on major breakthroughs. Deep specialism does not imply that we cannot specialise in multiple areas. As Feynman says, specialisation is for insects.  
+Should we strive towards a society of hyper-specialisation? The recent outrage against the award of a Nobel prize in Physics to machine learning researchers implies a rejection of cross-pollination in science. When interdisciplinary work is shunned upon, we miss out on major breakthroughs. Deep specialism does not imply that we cannot specialise in multiple areas. As Heinlein said, specialisation is for insects.  
 
 This is not limited only to research. In work, lateral movements should be encouraged. Let people work on their interests - their rabbit hole for the month - especially if they have deep specialism elsewhere (of course, don't compose the whole team of generalists). The 80/20 rule at work helps with this; the only bottleneck is to make such intra-organisational connections easy. I believe that hyper-specialism dooms one to local minima; diversity is a global optimisation strategy.  
 
