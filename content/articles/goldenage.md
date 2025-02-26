@@ -65,7 +65,7 @@ Now, transformers have enabled us to prompt the requirements or interface we wan
 
  Unsatisfactory results arise usually due to incomplete context such as missing out on a niche/old/new library not within an LLMs training dataset (this could be disrupted by OpenAI's new feature, Deep Research, released today, and is sometimes alleviated by web search).  
  
- One example is when working with PyVis, I screenshotted the current UI and specified the feature I wanted to develop. I was unable to get the desired output. I went back to thinking of a way to approach the problem and commented my approach before alt-tabbing. You can argue it would have been faster if I did this initially. This is still way faster than how work was done in 2021.  
+ One example is when working with PyVis, I screenshotted the current UI and specified the feature I wanted to develop. I was unable to get the desired output. I went back to thinking of a way to approach the problem and commented my approach before tabbing. You can argue it would have been faster if I did this initially. This is still way faster than how work was done in 2021.  
 
 Being able to give my entire codebase in GitHub Copilot aids with the context problem. Claude 3.5-Sonnet seems to give much more focused results. o1's reasoning is great but it's output must be constrained by the user, less it 'spasms' and over-generates code that I was not looking for. I also do not appreciate getting rate-limited so quickly, hence needing to revert to ChatGPT sometimes.   
 
