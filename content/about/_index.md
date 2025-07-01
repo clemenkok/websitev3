@@ -5,7 +5,7 @@ type: list
 
 #### Based in Singapore.
 
-I am a recently graduated from Imperial College London with an M.Eng. in Electronic and Information Engineering.  
+I am a recent graduate from Imperial College London with an M.Eng. in Electronic and Information Engineering.  
 
 For my thesis, I designed a novel neural architecture that integrated hard negative mining into Geoffery Hinton's [Forward-Forward Algorithm](https://arxiv.org/abs/2212.13345) and evaluated this on Online Continual Learning tasks using the [River](https://riverml.xyz/latest/) benchmark.    
 
